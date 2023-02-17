@@ -1,0 +1,11 @@
+APP_ID_NUTRITIONIX = ''
+API_KEY_NUTRITIONIX = ''
+
+
+
+
+
+
+
+
+

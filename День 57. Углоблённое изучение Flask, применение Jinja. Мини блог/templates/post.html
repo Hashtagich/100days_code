@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>read_post</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
+</head>
+<body>
+<div class="wrapper">
+
+    <div class="top">
+                <div class="title"><h1>My Blog</h1></div>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <h1>{{post['title']}}</h1>
+            <h2>{{post['subtitle']}}</h2>
+            <p>{{post['body']}}</p>
+            <a href="{{ url_for('blog') }}"> Go to start page!</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+<footer>
+    <p>Copyright {{ year }}. Built by random-company at the App.</p>
+</footer>
+</html>

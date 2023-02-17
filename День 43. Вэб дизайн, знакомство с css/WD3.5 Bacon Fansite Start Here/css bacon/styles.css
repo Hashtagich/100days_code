@@ -1,0 +1,24 @@
+h1 {
+    color: #d49292;
+    font-size: 100px;
+}
+
+img:hover {
+    background-color: gold;
+}
+
+/* в css так комментируется /* коммент */
+
+/* псевдоклассы начинаются с : и пишутся после названия элемента или класса, или id. */
+
+.bacon {
+    background-color: green;
+} /* через селекторы классов можно конкретному элементу менять стиль */
+
+.broccoli {
+    background-color: red;
+}
+
+#heading {
+    color: blue;
+}

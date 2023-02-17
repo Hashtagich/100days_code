@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
+</head>
+<body>
+<div class="wrapper">
+
+    <div class="top">
+        <div class="title"><h1>My Blog</h1></div>
+    </div>
+
+    {% for blog_post in post: %}
+    <div class="content">
+
+        <div class="card ">
+            <h2>{{blog_post['title']}}</h2>
+            <p>{{blog_post['subtitle']}}</p>
+            <a href="{{ url_for('read_post', num=blog_post['id']-1) }}">Read this</a>
+        </div>
+
+    </div>
+    {% endfor %}
+
+</div>
+    <!-- {% for blog_post in post: %} начало for
+         {% if blog_post['what'] == 2: %}  начало if
+        <h1>{{blog_post['what']}}</h1> действие
+        <h2>{{blog_post['why']}}</h2> действие
+         {% endif %}  конец if
+    {% endfor %}  конец for -->
+</body>
+<footer>
+    <p>Copyright {{ year }}. Built by random-company at the App.</p>
+</footer>
+</html>
